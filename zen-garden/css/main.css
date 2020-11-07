@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap");
+body {
+  background-color: #c2d2f2;
+  font-family: "Maitree", serif;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+  margin: 0 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #a64b29;
+}
+
+p {
+  color: #000000;
+}
+
+header, footer, aside {
+  background-color: #70731f;
+}
+
+.intro h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-left: 1.5em;
+  padding-top: 10px;
+  color: #c2d2f2;
+}
+
+.intro h2 {
+  margin-top: 10px;
+  padding-left: 1.5em;
+  padding-bottom: 10px;
+  color: #c2d2f2;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.5em;
+  padding-top: 5px;
+}
+
+.benefits {
+  border-bottom: #5176a6 solid 10px;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside h3 {
+  color: #c2d2f2;
+}
+
+aside ul a:link {
+  color: #c2d2f2;
+  text-decoration: none;
+}
+
+aside ul a:hover {
+  color: #a64b29;
+}
+
+.design-archives, .zen-resources, .design-selection {
+  padding: 5px 0 5px 1.5em;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  header {
+    grid-column: 1/4;
+  }
+
+  .summary {
+    grid-column: 2/4;
+  }
+
+  .preamble {
+    grid-column: 2/4;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .explanation {
+    grid-column: 1/3;
+  }
+
+  .participation {
+    grid-column: 1/3;
+  }
+
+  .benefits {
+    grid-column: 2/4;
+  }
+
+  .requirements {
+    grid-column: 1/3;
+  }
+
+  footer {
+    grid-column: 1/4;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  .design-selection {
+    grid-column: 1/2;
+  }
+
+  .design-archives {
+    grid-column: 2/3;
+  }
+
+  .zen-resources {
+    grid-column: 3/4;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
