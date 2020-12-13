@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap");
 body {
-  background-image: url(/zen-garden/images/background-image-small-01.jpg);
+  background-image: url(../images/background-image-small-01.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   font-family: "Maitree", serif;
@@ -135,7 +135,7 @@ footer a:link {
   }
 
   body {
-    background-image: url(/zen-garden/images/background-image-01.jpg);
+    background-image: url(../images/background-image-01.jpg);
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
