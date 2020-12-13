@@ -13,58 +13,102 @@ $secondary-font: 'Catamaran', sans-serif;
 
 
 body {
-    background-color: $color-4;
+    background-image: url(/zen-garden/images/background-image-small-01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     font-family: $primary-font;
 }
 
-.summary, .preamble, .explanation, .participation, .benefits, .requirements {
-    margin: 0 1.5em;
+.intro h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $color-3;
 }
 
+.wrapper h3 {
+    color: $color-5;
+}
+
 p {
     color: $color-5;
 }
 
-header, footer, aside {
+.footerImg img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intro, .main {
+    margin: 3.5em;
+}
+
+aside {
     background-color: $color-2;
+    padding: 3.5em;
 }
 
-.intro h1 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    padding-left: 1.5em;
-    padding-top: 10px;
-    color: $color-4;
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+    margin: 0;
 }
 
-.intro h2 {
-    margin-top: 10px;
-    padding-left: 1.5em;
-    padding-bottom: 10px;
-    color: $color-4;
+// header, footer, aside {
+//     background-color: $color-2;
+// }
+
+// footer {
+//     text-align: center;
+//     font-size: .5em;
+//     padding-top: 5px;
+// }
+
+// .benefits {
+//     border-bottom: $color-1 solid 10px;
+// }
+
+// .wrapper img {
+//     display: block;
+//     margin: 0 auto;
+//     width: 32.5em;
+//     background-color: $color-4;
+// }
+
+.intro a:link {
+    color: $color-2;
 }
 
-footer {
-    text-align: center;
-    font-size: .5em;
-    padding-top: 5px;
+.intro a:hover {
+    color: $color-3;
 }
 
-.benefits {
-    border-bottom: $color-1 solid 10px;
+.main a:link {
+    color: $color-2;
+}
+
+.main a:hover {
+    color: $color-3;
 }
 
 aside ul {
     list-style-type: none;
+    padding: 0;
 }
 
-aside h3 {
-    color: $color-4;
+aside ul li {
+    padding: 3px 0;
 }
+
+// aside h3 {
+//     color: $color-4;
+// }
 
 aside ul a:link {
     color: $color-4;
@@ -75,62 +119,96 @@ aside ul a:hover {
     color: $color-3;
 }
 
-.design-archives, .zen-resources, .design-selection {
-    padding: 5px 0 5px 1.5em;
+// .design-archives, .zen-resources, .design-selection {
+//     padding: 5px 0 5px 1.5em;
+// }
+
+.tent img, .backpack img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.tent, .backpack {
+    margin: 2em;
+}
+
+footer {
+    text-align: center;
+    font-size: .5rem;
+    background-color: $color-2;
+    padding-bottom: 50px;
+}
+
+footer a:link {
+    color: $color-4;
 }
 
 
 // Large Screen
 
-@media only screen and (min-width: 32.5em) {
-    .intro {
+@media only screen and (min-width: 850px) {
+
+    .page-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    header {
-        grid-column: 1/4;
-    }
-
-    .summary {
-        grid-column: 2/4;
-    }
-
-    .preamble {
-        grid-column: 2/4;
+    .intro {
+        grid-column: 1/5;
     }
 
     .main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
+        grid-column: 1/5;
     }
 
-    .explanation {
+    .footerImg {
+        grid-column: 1/5;
+    }
+
+    aside {
+        grid-column: 1/5;
+    }
+
+    .tent {
         grid-column: 1/3;
     }
 
-    .participation {
-        grid-column: 1/3;
+    .backpack {
+        grid-column: 3/5;
     }
 
-    .benefits {
-        grid-column: 2/4;
+    body {
+        background-image: url(/zen-garden/images/background-image-01.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
 
-    .requirements {
-        grid-column: 1/3;
+    .intro, .main {
+        margin: 5em 10em;
     }
 
-    footer {
-        grid-column: 1/4;
+    .sidebar {
+        padding: 5em 10em;
+    }
+
+    .tent img, .backpack img {
+        width: 350px;
+    }
+
+    .tent {
+        padding-left: 5em;
+    }
+
+    .backpack {
+        padding-right: 5em;
     }
 
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
+        grid-gap: 1em;
     }
 
     .design-selection {
@@ -144,4 +222,65 @@ aside ul a:hover {
     .zen-resources {
         grid-column: 3/4;
     }
+    // .intro {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //     grid-gap: 5px;
+    // }
+
+    // header {
+    //     grid-column: 1/4;
+    // }
+
+    // .summary {
+    //     grid-column: 2/4;
+    // }
+
+    // .preamble {
+    //     grid-column: 2/4;
+    // }
+
+    // .main {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //     grid-gap: 5px;
+    // }
+
+    // .explanation {
+    //     grid-column: 1/3;
+    // }
+
+    // .participation {
+    //     grid-column: 1/3;
+    // }
+
+    // .benefits {
+    //     grid-column: 2/4;
+    // }
+
+    // .requirements {
+    //     grid-column: 1/3;
+    // }
+
+    // footer {
+    //     grid-column: 1/4;
+    // }
+
+    // .wrapper {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //     grid-gap: 5px;
+    // }
+
+    // .design-selection {
+    //     grid-column: 1/2;
+    // }
+
+    // .design-archives {
+    //     grid-column: 2/3;
+    // }
+
+    // .zen-resources {
+    //     grid-column: 3/4;
+    // }
 }
